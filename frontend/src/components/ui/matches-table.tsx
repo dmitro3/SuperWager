@@ -382,7 +382,7 @@ export default function MatchesTable() {
                                       match.sport_event.competitors[0].name &&
                                     event.competitors[1].name ===
                                       match.sport_event.competitors[1].name
-                                )?.markets[0].books[0].outcomes[0].odds || "",
+                                )?.markets[0].books[4].outcomes[0].odds || "",
                               outcome: "pending",
                               selection: "home",
                               league_key: radar_leagues[league].season_id,
@@ -399,7 +399,7 @@ export default function MatchesTable() {
                                   match.sport_event.competitors[1].name
                             );
                             const oddsValue =
-                              foundEvent?.markets[0].books[0].outcomes[0].odds;
+                              foundEvent?.markets[0].books[4].outcomes[0].odds;
                             return oddsValue
                               ? parseFloat(oddsValue).toFixed(2)
                               : "-";
@@ -457,7 +457,7 @@ export default function MatchesTable() {
                                       match.sport_event.competitors[0].name &&
                                     event.competitors[1].name ===
                                       match.sport_event.competitors[1].name
-                                )?.markets[0].books[0].outcomes[1].odds || "",
+                                )?.markets[0].books[4].outcomes[1].odds || "",
                               outcome: "pending",
                               selection: "draw",
                               league_key: radar_leagues[league].season_id,
@@ -533,7 +533,7 @@ export default function MatchesTable() {
                                       match.sport_event.competitors[0].name &&
                                     event.competitors[1].name ===
                                       match.sport_event.competitors[1].name
-                                )?.markets[0].books[0].outcomes[2].odds || "",
+                                )?.markets[0].books[4].outcomes[2].odds || "",
                               outcome: "pending",
                               selection: "away",
                               league_key: radar_leagues[league].season_id,
